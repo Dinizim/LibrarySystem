@@ -58,6 +58,12 @@
       <DependentUpon>CRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="DAL\DALLibrarySystem.cs" />
+    <Compile Include="EditBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBookForm.Designer.cs">
+      <DependentUpon>EditBookForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Book.cs" />
     <Compile Include="InsertBookForm.cs">
       <SubType>Form</SubType>
@@ -70,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CRUD.resx">
       <DependentUpon>CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBookForm.resx">
+      <DependentUpon>EditBookForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InsertBookForm.resx">
       <DependentUpon>InsertBookForm.cs</DependentUpon>

@@ -29,6 +29,7 @@ namespace Library_System
         {
             Book book = new Book(txtName.Text, txtAuthor.Text, txtGender.Text, txtComboBox.Text);
             DALlibrarySystem.AddBooks(book);
+            this.Close();
 
         }
 

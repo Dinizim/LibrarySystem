@@ -34,6 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnclose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Refresh = new System.Windows.Forms.Button();
             this.BookView = new System.Windows.Forms.DataGridView();
             this.search_btn = new System.Windows.Forms.Button();
             this.txt_search = new System.Windows.Forms.TextBox();
@@ -43,8 +44,8 @@
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookView)).BeginInit();
@@ -93,6 +94,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(244)))), ((int)(((byte)(237)))));
+            this.panel1.Controls.Add(this.btn_Refresh);
             this.panel1.Controls.Add(this.BookView);
             this.panel1.Controls.Add(this.search_btn);
             this.panel1.Controls.Add(this.txt_search);
@@ -101,6 +103,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(975, 401);
             this.panel1.TabIndex = 13;
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Refresh.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.Location = new System.Drawing.Point(35, 77);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(93, 20);
+            this.btn_Refresh.TabIndex = 16;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // BookView
             // 
@@ -114,13 +130,14 @@
             this.Gender,
             this.Cod,
             this.Status,
-            this.Column1,
-            this.Column2});
+            this.Edit,
+            this.Delete});
             this.BookView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(244)))), ((int)(((byte)(237)))));
             this.BookView.Location = new System.Drawing.Point(34, 103);
             this.BookView.Name = "BookView";
             this.BookView.Size = new System.Drawing.Size(900, 269);
             this.BookView.TabIndex = 15;
+            this.BookView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BookView_CellContentClick);
             // 
             // search_btn
             // 
@@ -187,33 +204,33 @@
             this.Status.HeaderText = "Status";
             this.Status.Name = "Status";
             // 
-            // Column1
+            // Edit
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(49)))), ((int)(((byte)(92)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(49)))), ((int)(((byte)(92)))));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column1.HeaderText = "";
-            this.Column1.Name = "Column1";
-            this.Column1.Text = "Edit";
-            this.Column1.UseColumnTextForButtonValue = true;
+            this.Edit.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit.HeaderText = "";
+            this.Edit.Name = "Edit";
+            this.Edit.Text = "Edit";
+            this.Edit.UseColumnTextForButtonValue = true;
             // 
-            // Column2
+            // Delete
             // 
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column2.HeaderText = "";
-            this.Column2.Name = "Column2";
-            this.Column2.Text = "Delete";
-            this.Column2.UseColumnTextForButtonValue = true;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete.HeaderText = "";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
             // 
             // CRUD
             // 
@@ -246,12 +263,13 @@
         private System.Windows.Forms.Button search_btn;
         private System.Windows.Forms.TextBox txt_search;
         private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameBook;
         private System.Windows.Forms.DataGridViewTextBoxColumn Author;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cod;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewButtonColumn Column1;
-        private System.Windows.Forms.DataGridViewButtonColumn Column2;
+        private System.Windows.Forms.DataGridViewButtonColumn Edit;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

@@ -12,3 +12,18 @@ C:\Users\nicol\OneDrive\Documentos\GitHub\Pratice-C#\Library System\bin\Debug\Sy
 C:\Users\nicol\OneDrive\Documentos\GitHub\Pratice-C#\Library System\bin\Debug\System.Data.SQLite.xml
 C:\Users\nicol\OneDrive\Documentos\GitHub\Pratice-C#\Library System\obj\Debug\Library System.csproj.CopyComplete
 C:\Users\nicol\OneDrive\Documentos\GitHub\Pratice-C#\Library System\obj\Debug\Library_System.CRUD.resources
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\bin\Debug\Library System.exe.config
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\bin\Debug\Library System.exe
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\bin\Debug\Library System.pdb
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\bin\Debug\System.Data.SQLite.dll
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\bin\Debug\System.Data.SQLite.xml
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library System.csproj.AssemblyReference.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library_System.CRUD.resources
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library_System.InsertBookForm.resources
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library_System.Properties.Resources.resources
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library System.csproj.GenerateResource.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library System.csproj.CoreCompileInputs.cache
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library System.csproj.CopyComplete
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library System.exe
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library System.pdb
+C:\Users\nicol\OneDrive\Documentos\GitHub\Library System\obj\Debug\Library_System.EditBookForm.resources

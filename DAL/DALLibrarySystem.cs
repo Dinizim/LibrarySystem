@@ -92,5 +92,24 @@ namespace Library_System.DAL
                 throw ex;
             }
         }
+        public static void UptadeBook(string IDbook,Book EditBook)
+        {
+            try{
+                using (var cmd = DbConnection().CreateCommand())
+                {
+                    cmd.CommandText = "Update Books SET Name=@Name, Author=@Author, Gender =@Gender WHERE Cod=@Cod" ;
+                    cmd.Parameters.AddWithValue("@Cod", IDbook);
+                    cmd.Parameters.AddWithValue("@Name", EditBook.NameBook);
+                    cmd.Parameters.AddWithValue("@Author", EditBook.AuthorBook);
+                    cmd.Parameters.AddWithValue("@Gender", EditBook.GenderBook);
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
