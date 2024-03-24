@@ -106,7 +106,7 @@ namespace Library_System.DAL
 
                     da = new SQLiteDataAdapter(cmd);
                     da.Fill(dt);
-                    da.Fill(dt);
+                  
                     return dt;
                 }
 
