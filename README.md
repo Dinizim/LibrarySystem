@@ -10,7 +10,7 @@ Este projeto foi desenvolvido com o objetivo de praticar a integração de coman
 ### Imagens do Projeto:
 
 **Imagem 1: Tela Principal**
-![Tela Principal](prints/image1.jpg)
+![Tela Principal](prints/imagem1.jpg)
 
 **Imagem 2: Exemplo de Funcionalidade**
 ![Exemplo de Funcionalidade](image2.jpg)
