@@ -36,9 +36,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.BookView = new System.Windows.Forms.DataGridView();
-            this.search_btn = new System.Windows.Forms.Button();
-            this.txt_search = new System.Windows.Forms.TextBox();
-            this.btnInsert = new System.Windows.Forms.Button();
             this.NameBook = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +43,9 @@
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.search_btn = new System.Windows.Forms.Button();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookView)).BeginInit();
@@ -139,41 +139,6 @@
             this.BookView.TabIndex = 15;
             this.BookView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BookView_CellContentClick);
             // 
-            // search_btn
-            // 
-            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(64)))), ((int)(((byte)(116)))));
-            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.search_btn.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_btn.ForeColor = System.Drawing.Color.White;
-            this.search_btn.Location = new System.Drawing.Point(840, 21);
-            this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(94, 20);
-            this.search_btn.TabIndex = 14;
-            this.search_btn.Text = "search";
-            this.search_btn.UseVisualStyleBackColor = false;
-            // 
-            // txt_search
-            // 
-            this.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_search.Location = new System.Drawing.Point(552, 21);
-            this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(291, 20);
-            this.txt_search.TabIndex = 13;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(64)))), ((int)(((byte)(116)))));
-            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInsert.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.ForeColor = System.Drawing.Color.White;
-            this.btnInsert.Location = new System.Drawing.Point(34, 21);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(94, 20);
-            this.btnInsert.TabIndex = 12;
-            this.btnInsert.Text = "Create";
-            this.btnInsert.UseVisualStyleBackColor = false;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click_1);
-            // 
             // NameBook
             // 
             this.NameBook.DataPropertyName = "Name";
@@ -231,6 +196,42 @@
             this.Delete.Name = "Delete";
             this.Delete.Text = "Delete";
             this.Delete.UseColumnTextForButtonValue = true;
+            // 
+            // search_btn
+            // 
+            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(64)))), ((int)(((byte)(116)))));
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.search_btn.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.ForeColor = System.Drawing.Color.White;
+            this.search_btn.Location = new System.Drawing.Point(840, 21);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(94, 20);
+            this.search_btn.TabIndex = 14;
+            this.search_btn.Text = "search";
+            this.search_btn.UseVisualStyleBackColor = false;
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
+            // 
+            // txt_search
+            // 
+            this.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_search.Location = new System.Drawing.Point(552, 21);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(291, 20);
+            this.txt_search.TabIndex = 13;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(64)))), ((int)(((byte)(116)))));
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInsert.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsert.ForeColor = System.Drawing.Color.White;
+            this.btnInsert.Location = new System.Drawing.Point(34, 21);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(94, 20);
+            this.btnInsert.TabIndex = 12;
+            this.btnInsert.Text = "Create";
+            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click_1);
             // 
             // CRUD
             // 

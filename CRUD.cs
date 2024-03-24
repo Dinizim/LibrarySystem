@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library_System.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,8 +66,17 @@ namespace Library_System
             }
             if (BookView.Columns[e.ColumnIndex] == BookView.Columns["Delete"])
             {
-
+                if(MessageBox.Show("Do you want to delete book?","delete book", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                DALlibrarySystem.DeleteBook(idbook);
             }
+        }
+
+        private void search_btn_Click(object sender, EventArgs e)
+        {
+            string NameBook = txt_search.Text;
+            DataTable dt = new DataTable();
+            dt = DALlibrarySystem.GetBook(NameBook);
+            BookView.DataSource = dt;
         }
     }
 }

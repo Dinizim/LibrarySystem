@@ -92,6 +92,30 @@ namespace Library_System.DAL
                 throw ex;
             }
         }
+        public static DataTable GetBook(string Namebook)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (var cmd = DbConnection().CreateCommand())
+                {
+                    cmd.CommandText = "SELECT * FROM Books WHERE Name = @Name";
+                    cmd.Parameters.AddWithValue("@Name", Namebook);
+
+                    da = new SQLiteDataAdapter(cmd);
+                    da.Fill(dt);
+                    da.Fill(dt);
+                    return dt;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public static void UptadeBook(string IDbook,Book EditBook)
         {
             try{
@@ -107,6 +131,23 @@ namespace Library_System.DAL
 
             }
             catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public static void DeleteBook(string IDbook)
+        {
+            try
+            {
+                using (var cmd = DbConnection().CreateCommand())
+                {
+                    cmd.CommandText = "DELETE FROM Books WHERE Cod=@Cod";
+                    cmd.Parameters.AddWithValue("@Cod", IDbook);
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+            catch (Exception ex)
             {
                 throw ex;
             }
