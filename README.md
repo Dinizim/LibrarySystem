@@ -16,8 +16,7 @@ Este projeto foi desenvolvido com o objetivo de praticar a integração de coman
 ![Exemplo de Funcionalidade](prints/imagem2.png)
 ![Exemplo de Funcionalidade](prints/imagem3.png)
 
-**Imagem 3: Interação com Banco de Dados**
-![Interação com Banco de Dados](image3.jpg)
+
 
 Este projeto é ideal para aqueles que desejam aprimorar suas habilidades em C#, SQL e desenvolvimento de aplicativos Windows Forms, fornecendo uma base sólida para projetos mais complexos no futuro.
 
