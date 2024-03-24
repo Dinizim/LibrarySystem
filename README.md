@@ -10,10 +10,11 @@ Este projeto foi desenvolvido com o objetivo de praticar a integração de coman
 ### Imagens do Projeto:
 
 **Imagem 1: Tela Principal**
-![Tela Principal](prints/imagem1.jpg)
+![Tela Principal](prints/imagem1.png)
 
-**Imagem 2: Exemplo de Funcionalidade**
-![Exemplo de Funcionalidade](image2.jpg)
+**Imagem 2: Tela de Funcionalidade Criar e Editar**
+![Exemplo de Funcionalidade](prints/imagem2.png)
+![Exemplo de Funcionalidade](prints/imagem3.png)
 
 **Imagem 3: Interação com Banco de Dados**
 ![Interação com Banco de Dados](image3.jpg)
